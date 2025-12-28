@@ -291,3 +291,31 @@ header {
     flex: 1 1 20%;
   }
 }
+
+/* QUOTE */
+
+.quote {
+  border-top: 1px solid var(--clr-primary);
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.quote .container {
+  max-width: 72rem;
+}
+
+.quote__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-base);
+}
+
+.quote__wrapper blockquote {
+  max-width: 72ch;
+  margin: auto;
+}
+
+.quote__wrapper p {
+  font-size: clamp(1rem, 0.476vw + 0.929rem, 1.5rem);
+  font-weight: 900;
+  align-self: flex-end;
+}
