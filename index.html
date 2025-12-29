@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="site-header">
       <nav class="primary-nav container" aria-label="Primary navigation">
         <ul class="primary-nav__list">
-          <li class="primary-nav__item">
-            <a href="" class="primary-nav__link logo">MB.</a>
+          <li class="primary-nav__item nav__item-menu">
+            <button class="primary-nav__link button menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
           </li>
-          <li class="primary-nav__item">
-            <a href="#section2" class="primary-nav__link anchor"
+          <li class="primary-nav__item nav__item-logo">
+            <a href="index.html" class="primary-nav__link nav__link-logo"
+              >MB.</a
+            >
+          </li>
+          <li class="primary-nav__item nav__item-blog">
+            <a href="#section2" class="primary-nav__link nav__link-blog"
               ><span class="link-text">Blog</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,8 +52,8 @@
               </svg>
             </a>
           </li>
-          <li class="primary-nav__item">
-            <a href="#section3" class="primary-nav__link anchor">
+          <li class="primary-nav__item nav__item-quote">
+            <a href="#section3" class="primary-nav__link nav__link-quote">
               <span class="link-text">Quote</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,9 +71,9 @@
               </svg>
             </a>
           </li>
-          <li class="primary-nav__item">
+          <li class="primary-nav__item nav__item-cta">
             <a href="#section4" class="primary-nav__link button button-outline">
-              <span class="link-text">Sign up </span>
+              <span class="link-text">Sign up</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,7 +96,7 @@
     <main>
       <section id="section1" class="landing-page-section hero">
         <div class="container">
-          <article class="card">
+          <article class="card hero__card">
             <section class="card__body">
               <h1 class="card__heading">Hey there</h1>
               <p class="card__subheading">
@@ -84,7 +104,7 @@
                 and CSS only landing page I made for The Odin Project
               </p>
               <a href="#section2" class="button button-primary"
-                >Discover More</a
+                >Featured Posts</a
               >
             </section>
             <figure class="card__image">
@@ -98,72 +118,75 @@
       </section>
       <section id="section2" class="landing-page-section featured">
         <div class="container">
-          <h2 class="featured__heading">Featured Posts</h2>
+          <h2 class="featured__heading">Featured posts</h2>
           <ul class="featured__list">
             <li class="featured__item">
-              <article class="card">
+              <article class="card featured__card">
                 <figure class="card__image">
-                  <img src="images/abstract-1.jpg" alt="" />
+                  <img
+                    src="images/abstract-1.jpg"
+                    alt="Multicolored abstract lines on black background"
+                  />
                 </figure>
                 <section class="card__body">
-                  <h3 class="card__heading">Blog Post 1</h3>
+                  <h3 class="card__heading">HTML</h3>
                   <p class="card__subheading">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Facilis, placeat similique? Quibusdam rerum exercitationem
-                    officiis, repudiandae ullam asperiores cupiditate
-                    reprehenderit reiciendis neque magni! Quidem eaque animi aut
-                    vero cupiditate odio!
+                    In the Foundations course for HTML, I learned about the
+                    different elements that can make up a website as well as
+                    built a basic Recipes page.
                   </p>
                 </section>
               </article>
             </li>
             <li class="featured__item">
-              <article class="card">
+              <article class="card featured__card">
                 <figure class="card__image">
-                  <img src="images/abstract-2.jpg" alt="" />
+                  <img
+                    src="images/abstract-2.jpg"
+                    alt="Abstract image with purple, pink and black"
+                  />
                 </figure>
                 <section class="card__body">
-                  <h3 class="card__heading">Blog Post 2</h3>
+                  <h3 class="card__heading">CSS</h3>
                   <p class="card__subheading">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Facilis, placeat similique? Quibusdam rerum exercitationem
-                    officiis, repudiandae ullam asperiores cupiditate
-                    reprehenderit reiciendis neque magni! Quidem eaque animi aut
-                    vero cupiditate odio!
+                    This is where I am currently at in the Foundations
+                    coursework, which has given me a glimpse into how to style a
+                    website, and has been a lot of fun to learn.
                   </p>
                 </section>
               </article>
             </li>
             <li class="featured__item">
-              <article class="card">
+              <article class="card featured__card">
                 <figure class="card__image">
-                  <img src="images/abstract-3.jpg" alt="" />
+                  <img
+                    src="images/abstract-3.jpg"
+                    alt="Still image of cyan and bright orange ink on black background"
+                  />
                 </figure>
                 <section class="card__body">
-                  <h3 class="card__heading">Blog Post 3</h3>
+                  <h3 class="card__heading">JavaScript</h3>
                   <p class="card__subheading">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Facilis, placeat similique? Quibusdam rerum exercitationem
-                    officiis, repudiandae ullam asperiores cupiditate
-                    reprehenderit reiciendis neque magni! Quidem eaque animi aut
-                    vero cupiditate odio!
+                    This is the next portion of the Foundations course and where
+                    I am headed next. I am definitely looking forward to
+                    learning how websites become interactive.
                   </p>
                 </section>
               </article>
             </li>
             <li class="featured__item">
-              <article class="card">
+              <article class="card featured__card">
                 <figure class="card__image">
-                  <img src="images/abstract-4.jpg" alt="" />
+                  <img
+                    src="images/abstract-4.jpg"
+                    alt="Blurred image of teal, blue, orange, and pink"
+                  />
                 </figure>
                 <section class="card__body">
-                  <h3 class="card__heading">Blog Post 4</h3>
+                  <h3 class="card__heading">The future</h3>
                   <p class="card__subheading">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Facilis, placeat similique? Quibusdam rerum exercitationem
-                    officiis, repudiandae ullam asperiores cupiditate
-                    reprehenderit reiciendis neque magni! Quidem eaque animi aut
-                    vero cupiditate odio!
+                    I am optimstic about the future and the journey that will
+                    hopefully lead to a new career in software development.
                   </p>
                 </section>
               </article>
@@ -173,8 +196,10 @@
       </section>
       <section id="section3" class="landing-page-section quote">
         <div class="container">
-          <article class="quote__wrapper">
-            <blockquote>
+          <article class="quote__module">
+            <blockquote
+              cite="https://idscreate.com/2020/03/16/fifteen-inspiring-denzel-washington-quotes-on-success/"
+            >
               Nothing in life is worthwhile unless you take risks. Fall forward.
               Every failed experiment is one step closer to success.
             </blockquote>
@@ -186,7 +211,7 @@
         <div class="container">
           <article class="cta__module">
             <section class="cta__copy">
-              <h2 class="cta__heading">Stay in the know!</h2>
+              <h3 class="cta__heading">Stay in the know!</h3>
               <p class="cta__subheading">
                 Get the latest updates sent to your inbox
               </p>
@@ -200,5 +225,31 @@
         </div>
       </section>
     </main>
+    <footer id="site-footer">
+      <div class="container">
+        <div class="footer__module">
+          <p>Copyright &copy; 2025 Max Bliss</p>
+          <section class="button-wrapper">
+            <a href="#site-header" class="button back-to-top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+                />
+              </svg>
+              <span class="link-text">Back to top</span>
+            </a>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
